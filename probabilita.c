@@ -10,12 +10,12 @@ unsigned long long int disposizione(int n, int d) {
 	return disp;
 }
 unsigned long long int fattoriale(unsigned long long int n){
-    if(n < 2 )
-        return 1;
-    return n * fattoriale(n-1);
+    	if(n < 2 )
+        	return 1;
+    	return n * fattoriale(n-1);
 }
 double su(int n , int d){
-    return ((double) disposizione(n , d) / fattoriale(d));
+    	return ((double) disposizione(n , d) / fattoriale(d));
 }
 void inserisci(char* stringa , int controllo, int* valore){
 	do {
