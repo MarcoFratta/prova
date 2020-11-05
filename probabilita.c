@@ -1,5 +1,6 @@
 #include<stdio.h>
 #define numeroNuoveEstratte fDaTrovare + i
+#define MAX_FIGURINE 10000
 
 unsigned long long int disposizione(int n, int d) {
 	unsigned long long int disp = 1;
@@ -39,7 +40,7 @@ int main() {
 
 	printf(" -- NON INSERIRE ALTRO SE NON NUMERI INTERI -- \n\n");
 	
-	inserisci("Figurine totali: " , 100000 , &fTotali);
+	inserisci("Figurine totali: " , MAX_FIGURINE , &fTotali);
 	inserisci("Figurine trovate: ", fTotali, &fTrovate);
 	inserisci("Figurine per pacchetto: ", fTotali , &fPacchetto);
 	inserisci("Figurine da trovare: ", fPacchetto, &fDaTrovare);
